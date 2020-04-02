@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>dashoard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+    
+	body {
+		line-height:1.3;
+	}
+	
+	.animated.setengah {
+		animation-delay: 1.5s;
+	}
+	
+	.animated.ease {
+		animated-timing-function: ease;
+	}
+	
+	.animasi {
+		animation: animasi_fontcolor infinite;
+		animation-duration: 13s ; 
+		animation-timing-function: ease; 
+	}
+	
+	@keyframes animasi_fontcolor {
+					0% {color:#FFA500}
+					25% {color:#1E90FF}
+					50% {color:#FF1493}
+					100% {color:#FFA500} 
+	}
+	</style>
+</head>
+
+<body>
+	<div class="container text-center">
+    	<h1 class="pt-4 animasi">Animasi Text</h1>
+        <p class="small pb-4">Selamat datang kawan-kawan</p>
+    </div>
+    
+    <div class="animated fadeInUpBig ease text-center bg-primary text-light mr-2 ml-2 pr-2 pl-2 rounded">
+    	<p class="pt-3"><strong>Apa yang dibuat?</strong></p>
+        <p class="small pb-3">Tidak membuat apa-apa, hanya saja sabagai bahan belajar web saya &hearts;</p>
+    </div>
+    
+    <div class="container text-center">
+    	<p class="pt-3 pb-1 text-primary animated fadeIn delay-1s"><strong>Hasil belajar</strong></p>
+        <div class="row">
+        	<div class="col-md-12 text-center">
+            	<div class="card animated fadeIn setengah">
+                	<div class="card-body">
+            			<h5 class=" card-title">Dirumahaja</h5>
+            			<p class="small card-text">Web ini menggunakan library javascript yang namanya Typed.js sebagai animasi mengetiknya dan library css yang namanya Animate.css sebagai animasi bouncenya.</p>
+                        <a href="https://animasitext.github.io/dirumahaja" class="btn btn-outline-primary">Lihat Web</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
