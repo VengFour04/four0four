@@ -1,0 +1,179 @@
+<html>
+
+	<head>		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<title id="ttlwaktu"></title>
+
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+
+			html {
+
+			}
+
+			body {
+
+				text-align:center;
+
+			}
+
+			h4 {
+
+				font-size:2.2rem;
+
+				color:#FFFFFF;
+
+				font-family:'Righteous',cursive;
+
+			}
+
+			.footer {
+
+				height: 0px;
+
+				top: 550px;
+
+				left: 0px;
+
+				bottom: 0px;
+
+				right: 0px;
+
+				position: absolute;
+
+				margin: auto;
+
+				color:#FFFFFF;
+
+			}
+
+			a {
+
+				color:#FFFFFF;
+
+			}
+
+			.tengah {
+
+				margin:auto;
+
+				position:absolute;
+
+				height:200px;
+
+				top:0; 
+
+				left:0;
+
+				bottom:0; 
+
+				right:0;
+
+			}	
+
+		</style>
+
+	</head>
+
+	<body id="warna">
+
+   
+
+		<div id="typed-strings">
+
+    		<p><span id="waktu"></span>&nbsp;<span id="push"></span></p>
+
+    	</div>
+
+         <div class="tengah">
+
+			<h4 id="typed"></h4>
+
+         </div>
+
+         <div class="footer">
+
+         	<p>Created By&nbsp;<a href="https://github.com/animasitext/animasitext.github.io">404</a></p>
+
+         </div>
+
+		<script>
+
+		var jam = new Date().getHours();
+
+		if (jam <= 4) {	
+
+			hasil = "Selamat Malam";
+
+			var warna = document.getElementById("warna").style.background = "#0A4380";
+
+			} else if (jam <= 9) {
+
+			hasil = "Selamat Pagi";
+
+			var warna = document.getElementById("warna").style.background = "#CF8702";
+
+			} else if (jam <= 14) {
+
+			hasil = "Selamat Siang";
+
+			var warna = document.getElementById("warna").style.background = "#CFB302";
+
+			} else if (jam <= 18) {
+
+			hasil = "Selamat Sore";
+
+			var warna = document.getElementById("warna").style.background = "#CF5402";
+
+			} else if (jam <=24) {
+
+			hasil = "Selamat Malam";
+
+			var warna = document.getElementById("warna").style.background = "#0A4380";
+
+			} else {
+
+				hasil = "Error";
+
+			};
+
+		document.getElementById("waktu").innerHTML = (hasil);
+
+		document.getElementById("ttlwaktu").innerHTML = (hasil);
+
+		
+
+		var geturl = window.location.href.slice(window.location.href.indexOf('?') + 1);
+
+		var jmlurl = geturl.length;
+
+		if ( jmlurl <= 20 ) {
+
+			document.getElementById("push").innerHTML = (geturl);
+
+			}
+
+		
+
+		var typed = new Typed('#typed',{
+
+			stringsElement: '#typed-strings',
+
+			typeSpeed: 30,
+
+			loop: false,
+
+			cursorChar: ''
+
+		});	
+
+		</script>
+
+	</body>
+
+</html>
