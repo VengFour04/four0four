@@ -4,24 +4,31 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Animasi Text</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <style>
     
 	body {
-		line-height:1.3;
 	}
 	
-	footer {
-		height: 150px;
-		bottom:0px;
-		padding-top:105px;
+	.hov:hover {
+		box-shadow: 0px 0.6rem 1.2rem rgba(0, 0, 0, 0.28) !important;
+	}
+	
+	.tinggi {
+		height:209px;
 	}
 
+	footer {
+		height:130px;
+		bottom:0px;
+		padding-top:80px;
+	}
+	
 	.txtftr {
 		font-size:8pt;
 		margin:auto;
-	        }
+	}
 	
 	.animated.setengah {
 		animation-delay: 1.5s;
@@ -29,6 +36,10 @@
 	
 	.animated.setengah2 {
 		animation-delay: 2.5s;
+	}
+	
+	.animated.setengah3 {
+		animation-delay: 3.5s;
 	}
 	
 	.animated.ease {
@@ -40,6 +51,7 @@
 		animation-duration: 13s ; 
 		animation-timing-function: ease; 
 	}
+
 	
 	@keyframes animasi_fontcolor {
 					0% {color:#FFA500}
@@ -55,70 +67,79 @@
 	<div class="container text-center">
     	<h1 class="pt-4 animasi">Animasi Text</h1>
         <p class="small pb-4">Selamat datang kawan-kawan</p>
-        </div>
-
-    <div class="animated fadeInUpBig ease text-center bg-dark text-light pr-2 pl-2">
-    	<p class="pt-3 m-2"><strong>Apa yang dibuat?</strong></p>
-        <p class="small pb-3">Tidak membuat apa-apa, hanya saja sabagai bahan belajar web saya</p>
+    </div>
+    
+    <div class="animated fadeInUpBig ease text-center bg-dark text-light mr-2 ml-2 pr-3 pl-3 rounded">
+    	<p class="pt-4 m-1"><strong>Apa yang dibuat?</strong></p>
+        <p class="small pb-4">Tidak membuat apa-apa, hanya saja sabagai bahan belajar web saya</p>
     </div>
     
     <div class="container text-center">
-    <div class= "animated fadeIn delay-1s card container pr-2 pl-2 bg-dark">
-    	<p class="pt-3 pb-1 text-light animated fadeIn delay-1s"><strong>Hasil belajar</strong></p>
+    <div class= "animated fadeIn delay-1s container pr-2 pl-2">
+    	<p class="pt-3 pb-3 text-dark animated fadeIn delay-1s"><strong>Hasil belajar</strong></p>
     	
         <div class="row">
-        	<div class="col-md-12 text-center">
-            	<div class="card mt-2 animated fadeIn setengah">
+        	<div class="col-md-6 text-center">
+            	<div class="card mb-4 animated fadeIn setengah shadow-sm tinggi hov" onclick="klik()">
                 	<div class="card-body">
-            			<h5 class=" card-title">Dirumahaja</h5>
+            			<h5 class="card-title">Dirumahaja</h5>
             			<p class="small card-text">Web ini menggunakan library javascript yang namanya Typed.js sebagai animasi mengetiknya dan library css yang namanya Animate.css sebagai animasi bouncenya.</p>
-                        <a href="https://animasitext.github.io/dirumahaja" class="btn btn-outline-dark m-auto">Lihat Web</a>
                     </div>
                 </div>
             </div>
-            </div>
-            
-            <div class="row">
-            <div class="col-md-12 text-center">
-            	<div class="card mt-2 animated fadeIn delay-2s">
+           
+            <div class="col-md-6 text-center">
+            	<div class="card mb-4 animated fadeIn delay-2s shadow-sm hov tinggi" onclick="klik2()">
                 	<div class="card-body">
-            			<h5 class=" card-title">Kartu Ucapan</h5>
+            			<h5 class="card-title">Kartu Ucapan</h5>
             			<p class="small card-text">Tambahkan "?" dibelakang URL lalu tulis namamu. Contoh "?Namamu".</p>
-            			  <a href="https://animasitext.github.io/card" class="btn btn-outline-dark m-auto">Lihat Web</a>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
             
-            <div class="row">
-            <div class="col-md-12 text-center">
-            	<div class="card mt-2 animated fadeIn setengah2">
+        <div class="row">
+			<div class="col-md-4 text-center">
+            	<div class="card mb-4 animated fadeIn setengah2 shadow-sm hov">
                 	<div class="card-body">
-            			<h5 class=" card-title">Cooming Soon</h5>
+            			<h5 class="card-title">Cooming Soon</h5>
             			<p class="small card-text">Dalam pembelajaran.</p>
                     </div>
                 </div>
             </div>
-            </div>
-            
-            <div class="row">
-            	<div class="col-md-12 text-center">
-            	<div class="card mt-2 mb-2 animated fadeIn delay-3s">
+			
+            <div class="col-md-4 text-center">
+            	<div class="card mb-4 animated fadeIn delay-3s shadow-sm hov">
                 	<div class="card-body">
-            			<h5 class=" card-title">Cooming Soon</h5>
+            			<h5 class="card-title">Cooming Soon</h5>
             			<p class="small card-text">Dalam pembelajaran.</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+            	<div class="card mb-4 animated fadeIn setengah3 shadow-sm hov">
+                	<div class="card-body">
+            			<h5 class="card-title">Cooming Soon</h5>
+            			<p class="small card-text">Dalam pembelajaran.</p>
+                    </div>
                 </div>
-            </div>
-            </div>
-            
-        </div>    
-    
-    
+			</div>
+		</div>
+    </div>
+    </div> 
     <footer class="text-center bg-dark text-light mt-3">
-    	<p class="txtftr">Created by <a href= "#" class="text-light"><b>404</b></a></p>
+    	<p class="txtftr">Created by <a href= "#" class="text-light"><b>404</b></a> | Copyright 2020</p>
     </footer>
+	
+<script>
+	function klik() {
+		window.location.href = "https://animasitext.github.io/dirumahaja";
+	}
+	function klik2() {
+		window.location.href = "https://animasitext.github.io/card";
+	}
+</script>
     
 </body>
 </html>
